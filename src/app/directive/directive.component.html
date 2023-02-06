@@ -1,0 +1,20 @@
+<div class="table table-dark">
+  <table class="table table-bordered table-hover">
+    <thead class="table-danger">
+      <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Gender</td>
+        <td>Address</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let st of students; let i = index">
+        <td>{{ i }}</td>
+        <td>{{ st.name }}</td>
+        <td>{{ st.gender }}</td>
+        <td>{{ st.address }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

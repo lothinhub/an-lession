@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="lebal">{{ Display }}</div>
+  <input
+    type="text"
+    name=""
+    class="form-control"
+    id=""
+    placeholder="Input Text Here"
+    (input)="EventBindingChange($event)"
+  />
+  <input class="form-control" type="text" name="" id="" [(ngModel)]="TwoWayBinding" />
+  <h1>{{ TwoWayBinding }}</h1>
+</div>
