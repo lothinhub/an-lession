@@ -7,8 +7,15 @@ import { Component } from '@angular/core';
 })
 export class DirectiveComponent {
   students = [
-    { name: 'John', gender: 'Female', address: 'PP' },
-    { name: 'Lothin', gender: 'male', address: 'KPC' },
-    { name: 'Johnsey', gender: 'Female', address: 'KPS' }
+    { name: 'Tem Thouen', gender: 'Male', address: 'PP', status: 'active' },
+    { name: 'Mang Pao', gender: 'Female', address: 'KPC', status: 'active' },
+    { name: 'THouen Lythou', gender: 'Male', address: 'Korean', status: 'active' },
+    { name: 'Thouen Channage', gender: 'Female', address: 'KPT', status: 'active' },
+    { name: 'THouen Channern', gender: 'Female', address: 'KPC', status: 'active' },
+    { name: 'THOUEN LOTHIN', gender: 'Male', address: 'Phnompenh', status: 'active' },
+    { name: 'Jim SO Chea', gender: 'Male', address: 'KPC', status: 'inactive' },
+    { name: 'Chea Panna', gender: 'Female', address: 'KPC', status: 'inactive' },
+    { name: 'Chea Chetra', gender: 'Male', address: 'KPS', status: 'inactive' },
+    { name: 'Rate Barang', gender: 'Female', address: 'KPC', status: 'inactive' }
   ];
 }

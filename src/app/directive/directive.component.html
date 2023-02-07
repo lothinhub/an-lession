@@ -6,14 +6,35 @@
         <td>Name</td>
         <td>Gender</td>
         <td>Address</td>
+        <td>Status</td>
+        <td>Action</td>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let st of students; let i = index">
+      <tr
+        *ngFor="let st of students; let i = index"
+        [ngStyle]="{
+          backgroundColor: st.status === 'active' ? 'green' : 'red'
+        }"
+      >
         <td>{{ i }}</td>
         <td>{{ st.name }}</td>
         <td>{{ st.gender }}</td>
         <td>{{ st.address }}</td>
+        <!-- <td [ngStyle]="{ color: st.status === 'active' ? 'green' : 'red' }">
+            {{ st.status }}
+          </td> -->
+        <td>
+          {{ st.status }}
+        </td>
+        <td>
+          <button class="btn btn-sm btn-warning m-2" *ngIf="st.status==='active'; ">Edit</button>
+          <button class="btn btn-sm btn-danger m-2" *ngIf="st.status==='active'; else confirm">Delete</button>
+          <ng-template #confirm>
+            <button class="btn btn-sm btn-primary m-2" id="confirm">Confirm</button>
+          </ng-template>
+
+        </td>
       </tr>
     </tbody>
   </table>
