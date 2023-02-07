@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
-  Display: String = '...';
+  Display: String = '';
   EventBindingChange(e: any) {
     console.log(e.target.value);
     this.Display = e.target.value;
   }
-  TwoWayBinding:String = 'twoWay';
+  TwoWayBinding:String = '';
   Twoway(e:any){
     this.TwoWayBinding =e.target.value;
   }
