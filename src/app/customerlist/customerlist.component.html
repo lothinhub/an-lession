@@ -1,8 +1,8 @@
 <div class="container">
   <div class="container-fluid">
-    <table class="table table-hover mt-4">
+    <table class="table table-bordered border-primary table-hover mt-4">
       <thead>
-        <tr>
+        <tr class="text text-center">
           <th scope="col">#</th>
           <th scope="col">Name</th>
           <th scope="col">Address</th>
@@ -12,17 +12,23 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let cus of Customer">
-          <th>{{cus.customerNo}}</th>
-          <td>{{cus.name}}</td>
-          <td>{{cus.address}}</td>
-          <td>{{cus.city}}</td>
-          <td>{{cus.country}}</td>
-          <td class="text text-sm text-info" (click)="selectnameCustomer=cus">Select </td>
+        <tr *ngFor="let cus of Customer" class="text text-center">
+          <th>{{ cus.customerNo }}</th>
+          <td>{{ cus.name }}</td>
+          <td>{{ cus.address }}</td>
+          <td>{{ cus.city }}</td>
+          <td>{{ cus.country }}</td>
+          <td>
+            <button
+              class="btn btn-sm btn-info"
+              (click)="selectnameCustomer = cus"
+            >
+              Select
+            </button>
+          </td>
         </tr>
+        <h1>{{ selectnameCustomer.name }}</h1>
       </tbody>
     </table>
-    <input type="text" name="" class="form-control" placeholder="Here You Selected: " #cus id="" {{cus.selectnameCustomer.name}}>
-
   </div>
 </div>
