@@ -151,9 +151,14 @@ export class CourseComponent {
     return this.listdata.filter(type => type.course === 'trial').length;
   }
   courseCountRadioButton: String = 'All';
-
   onChange(data: String) {
     this.courseCountRadioButton = data;
     // console.log(this.courseCountRadioButton);
+  }
+  searchText: string = '';
+
+  onsearchTextInput(searchvalue: string) {
+    this.searchText = searchvalue;
+    console.log(this.searchText);
   }
 }

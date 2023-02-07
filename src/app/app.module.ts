@@ -13,6 +13,7 @@ import { SearchComponent } from './search/search.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { CourseComponent } from './course/course.component';
 import { FilterComponent } from './filter/filter.component';
+import { SearchCourseComponent } from './search-course/search-course.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { FilterComponent } from './filter/filter.component';
     SearchComponent,
     DirectiveComponent,
     CourseComponent,
-    FilterComponent
+    FilterComponent,
+    SearchCourseComponent
   ],
   imports: [
     BrowserModule,
