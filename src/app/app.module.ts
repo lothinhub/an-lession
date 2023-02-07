@@ -11,6 +11,8 @@ import { NotificationComponent } from './notification/notification.component';
 import { HeaderComponent } from './header/header.component';
 import { SearchComponent } from './search/search.component';
 import { DirectiveComponent } from './directive/directive.component';
+import { CourseComponent } from './course/course.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { DirectiveComponent } from './directive/directive.component';
     NotificationComponent,
     HeaderComponent,
     SearchComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    CourseComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

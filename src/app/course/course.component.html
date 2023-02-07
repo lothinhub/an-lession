@@ -1,0 +1,34 @@
+<app-filter
+[all]="getall()"
+[free]="getfree()"
+[primium]="getPrimium()"
+[trial]="gettrial()"
+(filtersRadioChange)="onChange($event)"
+/>
+
+  <div class="row">
+    <ng-container *ngFor="let post of listdata">
+    <div class="col-md-3" *ngIf="courseCountRadioButton==='All' || courseCountRadioButton === post.course">
+      <div class="card-deck">
+        <div class="card">
+          <div class="card-header bg-info">
+            <h4 class="text text-danger">{{ post.id }}</h4>
+          </div>
+          <img
+            class="card-img-top"
+            src="{{ post.url }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ post.thumbnailUrl }}</h5>
+            <p class="card-text">{{ post.title }}</p>
+            <p class="card-text">
+              <small class="text-muted">{{post.course}}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  </div>
+
+
