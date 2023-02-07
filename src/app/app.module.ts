@@ -14,6 +14,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { CourseComponent } from './course/course.component';
 import { FilterComponent } from './filter/filter.component';
 import { SearchCourseComponent } from './search-course/search-course.component';
+import { ReferVariableComponent } from './refer-variable/refer-variable.component';
+import { CustomerlistComponent } from './customerlist/customerlist.component';
 
 
 @NgModule({
@@ -27,7 +29,9 @@ import { SearchCourseComponent } from './search-course/search-course.component';
     DirectiveComponent,
     CourseComponent,
     FilterComponent,
-    SearchCourseComponent
+    SearchCourseComponent,
+    ReferVariableComponent,
+    CustomerlistComponent
   ],
   imports: [
     BrowserModule,
