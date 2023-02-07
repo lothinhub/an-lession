@@ -1,3 +1,7 @@
+<app-search-course
+(searchEventChange)="onsearchTextInput($event)"
+/>
+
 <app-filter
 [all]="getall()"
 [free]="getfree()"
@@ -8,7 +12,8 @@
 
   <div class="row">
     <ng-container *ngFor="let post of listdata">
-    <div class="col-md-3" *ngIf="courseCountRadioButton==='All' || courseCountRadioButton === post.course">
+      <!-- courseCountRadioButton==='All' || courseCountRadioButton === post.course -->
+    <div class="col-md-3" *ngIf="searchText==='' || post.course.toLowerCase().includes(searchText) ">
       <div class="card-deck">
         <div class="card">
           <div class="card-header bg-info">
