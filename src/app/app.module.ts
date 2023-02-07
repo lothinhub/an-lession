@@ -16,6 +16,7 @@ import { FilterComponent } from './filter/filter.component';
 import { SearchCourseComponent } from './search-course/search-course.component';
 import { ReferVariableComponent } from './refer-variable/refer-variable.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
+import { ViewChildComponent } from './view-child/view-child.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CustomerlistComponent } from './customerlist/customerlist.component';
     FilterComponent,
     SearchCourseComponent,
     ReferVariableComponent,
-    CustomerlistComponent
+    CustomerlistComponent,
+    ViewChildComponent
   ],
   imports: [
     BrowserModule,
