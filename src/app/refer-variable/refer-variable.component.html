@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="mb-3">
+    <label for="exampleFormControlInput1" class="form-label"
+      >Your Text Here: {{ referenceVar.value }}</label
+    >
+    <input
+      #referenceVar
+      (keyup)="(0)"
+      type="text"
+      class="form-control mb-2"
+      id="exampleFormControlInput1"
+      placeholder="Input Text HERE..."
+    />
+    <button class="btn btn-primary" (click)="Hello(referenceVar)">Send</button>
+  </div>
+</div>
