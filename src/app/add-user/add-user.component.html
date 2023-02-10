@@ -1,0 +1,23 @@
+<div class="container mt-4">
+  <div class="input-group">
+    Input:<input
+      type="text"
+      name="username"
+      id="username"
+      class="form-control"
+      [(ngModel)]="name"
+    />
+
+    Select:<select
+      name="status"
+      id="status"
+      class="form-control"
+      [(ngModel)]="status"
+    >
+      <option value="">-- Select One --</option>
+      <option value="active">Active</option>
+      <option value="inactive">InActive</option>
+    </select>
+  </div>
+  <button class="btn btn-primary mt-3" (click)="addUser()">Create</button>
+</div>

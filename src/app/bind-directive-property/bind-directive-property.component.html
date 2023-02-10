@@ -1,0 +1,20 @@
+<div class="btn btn-primary" (click)="displayText()">Click</div>
+
+<div
+  class="container mt-4"
+  appHightlight
+  appHover
+  *ngIf="display; else iffalse"
+>
+  <p class="container">
+    jkldssj
+  </p>
+</div>
+
+<ng-template #iffalse>
+  <p class="container">
+    jkldssjflksjfsldfjwoeijoijreipdjklfjskfdjfljsdflkdjafiaoujfjjlfjsdlkfjslkfjllskf
+    dfklsdjfsldkjflksdjflsjflksjksjfklsjflkjdklfjlskdjflkjdslkfjsdldfjslk
+  </p>
+</ng-template>
+

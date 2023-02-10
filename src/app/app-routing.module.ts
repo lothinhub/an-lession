@@ -5,8 +5,12 @@ import { ReferVariableComponent } from './refer-variable/refer-variable.componen
 import { ContainerComponent } from './container/container.component';
 import { CustomerlistComponent } from './customerlist/customerlist.component';
 import { ViewChildComponent } from './view-child/view-child.component';
+import { BindDirectivePropertyComponent } from './bind-directive-property/bind-directive-property.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+
+  { path: '', component: HomeComponent },
 
   { path: 'course', component: CourseComponent },
 
@@ -17,6 +21,8 @@ const routes: Routes = [
   { path: 'customer', component: CustomerlistComponent },
 
   { path: 'viewChild', component: ViewChildComponent },
+
+  { path: 'binding', component: BindDirectivePropertyComponent },
 ];
 
 @NgModule({

@@ -1,3 +1,19 @@
 <app-nav/>
-
+<app-add-user/>
+<div class="container mt-3">
+  <table class="table table-bordered table-info">
+    <thead>
+      <tr>
+        <th scope="col">Fullname</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row">{{user.name}}</th>
+        <td colspan="2">{{user.status}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <router-outlet></router-outlet>
